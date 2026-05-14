@@ -13,11 +13,11 @@ describe('Soldier', () => {
     describe('constructor method', ()=>{
       test('should receive 2 arguments: health and strength ', ()=> expect(Soldier.length).toEqual(2));
 
-      //   test("should receive the health property as its 1st argument", ()=>
-      // expect(soldier.health).toEqual(health));
+      test("should receive the health property as its 1st argument", ()=>
+      expect(soldier.health).toEqual(health));
 
-      // test("should receive the health property as its 1st argument", ()=>
-      // expect(soldier.strength).toEqual(strength));
+      test("should receive the health property as its 1st argument", ()=>
+      expect(soldier.strength).toEqual(strength));
     })
     describe("attack() method", () => {
 
