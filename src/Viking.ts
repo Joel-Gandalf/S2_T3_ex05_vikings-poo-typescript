@@ -13,7 +13,10 @@ export class Viking extends Soldier{
         if(this.health <= 0){
             return this.name + ' has died in act of combat';
         }
-        return this.name + ' has received ' + damge + ' points of damage';
-        
+        return this.name + ' has received ' + damge + ' points of damage';  
+    }
+
+    battleCry(){
+        return 'Odin Owns You All!'
     }
 }
