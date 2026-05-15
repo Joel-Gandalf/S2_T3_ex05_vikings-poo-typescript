@@ -21,15 +21,15 @@ describe('Soldier', () => {
     })
     describe("attack() method", () => {
 
-        // test("should be a function", ()=> expect(typeof(soldier.attack)).toBe("function"));
+        test("should be a function", ()=> expect(typeof(soldier.attack)).toBe("function"));
 
-        // test("should receive 0 arguments", ()=> {
-        //   expect(soldier.attack.length).toEqual(0);
-        // });
+        test("should receive 0 arguments", ()=> {
+          expect(soldier.attack.length).toEqual(0);
+        });
 
-        // test("should return the strength property of the Soldier", ()=> {
-        //   expect(soldier.attack()).toEqual(strength);
-        // });
+        test("should return the strength property of the Soldier", ()=> {
+          expect(soldier.attack()).toEqual(strength);
+        });
     });
     describe("receiveDamage() method", ()=> {
         // test("should be a function", ()=>
