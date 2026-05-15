@@ -12,26 +12,26 @@ describe("Viking", ()=> {
       viking = new Viking(name, health, strength);
     });
 
-    // test("should inherit from Soldier", ()=> {
-    //   expect(viking instanceof Soldier).toEqual(true);
-    // });
+    test("should inherit from Soldier", ()=> {
+      expect(viking instanceof Soldier).toEqual(true);
+    });
 
     describe("constructor function", ()=> {
-    //   test("should receive 3 arguments (name, health & strength)", ()=> {
-    //     expect(Viking.length).toEqual(3);
-    //   });
+      test("should receive 3 arguments (name, health & strength)", ()=> {
+        expect(Viking.length).toEqual(3);
+      });
 
-    //   test("should receive the name property as its 1st argument", ()=> {
-    //     expect(viking.name).toEqual(name);
-    //   });
+      test("should receive the name property as its 1st argument", ()=> {
+        expect(viking.name).toEqual(name);
+      });
 
-    //   test("should receive the health property as its 2nd argument", ()=> {
-    //     expect(viking.health).toEqual(health);
-    //   });
+      test("should receive the health property as its 2nd argument", ()=> {
+        expect(viking.health).toEqual(health);
+      });
 
-    //   test("should receive the strength property as its 3rd argument", ()=> {
-    //     expect(viking.strength).toEqual(strength);
-    //   });
+      test("should receive the strength property as its 3rd argument", ()=> {
+        expect(viking.strength).toEqual(strength);
+      });
     });
 
     describe("attack() method", ()=> {
