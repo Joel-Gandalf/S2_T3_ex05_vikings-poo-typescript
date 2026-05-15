@@ -56,13 +56,13 @@ describe("Saxon", ()=> {
         expect(saxon.health).toEqual(health - 50);
       });
 
-      // test("should return \"A Saxon has received DAMAGE points of damage\", if the Saxon is still alive", ()=> {
-      //   expect(saxon.receiveDamage(45)).toEqual("A Saxon has received 45 points of damage");
-      //   expect(saxon.receiveDamage(10)).toEqual("A Saxon has received 10 points of damage");
-      // });
+      test("should return \"A Saxon has received DAMAGE points of damage\", if the Saxon is still alive", ()=> {
+        expect(saxon.receiveDamage(45)).toEqual("A Saxon has received 45 points of damage");
+        expect(saxon.receiveDamage(10)).toEqual("A Saxon has received 10 points of damage");
+      });
 
-      // test("should return \"A Saxon has died in combat\", if the Saxon dies", ()=> {
-      //   expect(saxon.receiveDamage(health)).toEqual("A Saxon has died in combat");
-      // });
+      test("should return \"A Saxon has died in combat\", if the Saxon dies", ()=> {
+        expect(saxon.receiveDamage(health)).toEqual("A Saxon has died in combat");
+      });
     });
   });

@@ -5,4 +5,12 @@ export class Saxon extends Soldier{
         super(health, strength);
 
     }
+        receiveDamage(damge: number) {
+        super.receiveDamage(damge);
+
+        if(this.health <= 0){
+            return 'A Saxon has died in combat';
+        }
+        return 'A Saxon has received ' + damge + ' points of damage';
+    }
 }
