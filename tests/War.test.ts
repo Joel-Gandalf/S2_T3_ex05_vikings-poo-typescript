@@ -81,34 +81,34 @@ describe("War", () => {
   });
 
   describe("Armies Attack", () => {
-    // beforeEach(() => {
-    //   war.addViking(viking);
-    //   war.addSaxon(saxon);
-    // });
+    beforeEach(() => {
+      war.addViking(viking);
+      war.addSaxon(saxon);
+    });
 
     describe("vikingAttack() method", () => {
-    //   test("should be a function", () => {
-    //     expect(typeof (war.vikingAttack)).toBe("function");
-    //   });
+      test("should be a function", () => {
+        expect(typeof (war.vikingAttack)).toBe("function");
+      });
 
-    //   test("should receive 0 arguments", () => {
-    //     expect(war.vikingAttack.length).toEqual(0);
-    //   });
+      test("should receive 0 arguments", () => {
+        expect(war.vikingAttack.length).toEqual(0);
+      });
 
-    //   test("should make Saxon receiveDamage() equal to the strength of a Viking", () => {
-    //     let oldHealth = saxon.health;
-    //     war.vikingAttack();
-    //     expect(saxon.health).toEqual(oldHealth - viking.strength);
-    //   });
+      test("should make Saxon receiveDamage() equal to the strength of a Viking", () => {
+        let oldHealth = saxon.health;
+        war.vikingAttack();
+        expect(saxon.health).toEqual(oldHealth - viking.strength);
+      });
 
-    //   test("should remove dead saxons from the army", () => {
-    //     war.vikingAttack();
-    //     expect(war.saxonArmy.length).toEqual(0);
-    //   });
+      test("should remove dead saxons from the army", () => {
+        war.vikingAttack();
+        expect(war.saxonArmy.length).toEqual(0);
+      });
 
-    //   test("should return result of calling receiveDamage() of a Saxon with the strength of a Viking", () => {
-    //     expect(war.vikingAttack()).toEqual("A Saxon has died in combat");
-    //   });
+      test("should return result of calling receiveDamage() of a Saxon with the strength of a Viking", () => {
+        expect(war.vikingAttack()).toEqual("A Saxon has died in combat");
+      });
     });
 
     describe("saxonAttack() method", () => {
