@@ -7,7 +7,7 @@ export class Viking extends Soldier{
         this.name = name;
     }
 
-    receiveDamage(damge: number) {
+    receiveDamage(damge: number): string {
         super.receiveDamage(damge);
 
         if(this.health <= 0){
@@ -16,7 +16,7 @@ export class Viking extends Soldier{
         return this.name + ' has received ' + damge + ' points of damage';  
     }
 
-    battleCry(){
+    battleCry(): string{
         return 'Odin Owns You All!'
     }
 }
