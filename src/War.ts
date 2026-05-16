@@ -11,16 +11,16 @@ export class War {
         this.saxonArmy = [];
     }
 
-    addViking(viking: Viking){
+    addViking(viking: Viking): undefined {
         this.vikingArmy.push(viking);
     }
 
-    addSaxon(saxon: Saxon){
+    addSaxon(saxon: Saxon): undefined {
         this.saxonArmy.push(saxon);
 
     }
 
-    vikingAttack(){
+    vikingAttack(): string {
         const randomVikingIndex: number = Math.floor(Math.random() * this.vikingArmy.length);
         const randomSaxonIndex: number = Math.floor(Math.random() * this.saxonArmy.length);
 
@@ -35,7 +35,7 @@ export class War {
         return damageResult;
     }
 
-    saxonAttack(){
+    saxonAttack(): string {
         const randomVikingIndex: number = Math.floor(Math.random() * this.vikingArmy.length);
         const randomSaxonIndex: number = Math.floor(Math.random() * this.saxonArmy.length);
 
@@ -50,7 +50,7 @@ export class War {
         return damageResult;
     }
 
-    showStatus() {
+    showStatus(): string {
         if(this.saxonArmy.length === 0){
             return 'Vikings have won the war of the century!'
         }
